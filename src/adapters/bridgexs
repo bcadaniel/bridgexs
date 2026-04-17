@@ -1,1 +1,16 @@
+import { BridgeAdapter, PartialContractEventParams } from "../../helpers/bridgeAdapter.type";
+import { constructTransferParams } from "../../helpers/eventParams";
 
+const contractAddresses = {
+  ethereum: "0x你的合約地址",
+  // 其他鏈...
+};
+
+const adapter: BridgeAdapter = {
+  ethereum: {
+    bridgeContract: contractAddresses.ethereum,
+    // 設定你的事件監聽
+  },
+};
+
+export default adapter;
